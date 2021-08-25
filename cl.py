@@ -23,8 +23,5 @@ print('There are', len(new), 'amount of reviews that the word length is not over
 good = [d for d in data if 'good' in d]
 print('There are roughly', len(good), 'reviews that are satisfied with their trade, however, this data is not precise.')
 
-but = []
-for a in data: 
-	if 'but' in d:
-		but.append(d)
+but = [d for d in data if 'but' in d]
 print('There are roughly', len(but), 'reviews that has concerns or issues in their trade, however, this data is not precise.')
